@@ -1,0 +1,3 @@
+tokens,POS,DET
+"['ad', 'brutum', 'i', 'ad', 'brutum', 'ii', 'cicerothe', 'latin', 'librarythe', 'classics', 'page']","['ADP', 'ADJ', 'NUM', 'ADP', 'ADJ', 'NUM', 'VERB', 'VERB', 'NOUN', 'ADJ', 'PUNCT']","['case', 'amod', 'obl', 'case', 'nmod', 'obl', 'advcl', 'root', 'obj', 'amod', 'punct']"
+cicero,adbrutum,

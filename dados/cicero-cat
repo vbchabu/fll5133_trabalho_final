@@ -1,0 +1,3 @@
+tokens,POS,DET
+"['m', 'tulli', 'ciceronis', 'orationes', 'in', 'catilinamin', 'catilinam', 'iin', 'catilinam', 'iiin', 'catilinam', 'iiiin', 'catilinam', 'iu']","['NUM', 'NOUN', 'NOUN', 'NOUN', 'ADP', 'NOUN', 'PROPN', 'PUNCT', 'NOUN', 'PUNCT', 'PROPN', 'ADP', 'PROPN', 'NUM']","['root', 'nmod', 'nmod', 'advcl', 'case', 'conj', 'flat', 'punct', 'conj', 'punct', 'conj', 'case', 'conj', 'amod']"
+cicero,cat,
