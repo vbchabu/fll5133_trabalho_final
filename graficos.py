@@ -21,7 +21,7 @@ def dispersao_tag_tag(tag_x,tag_y):
         plt.xlabel(tag_x)
         plt.ylabel(tag_y)
         plt.savefig('graficos/{}_x_{}.png'.format(tag_y,tag_x))
-        #plt.show()
+        plt.show()
         plt.close()
 
 def dispersao_no_tempo(tag):
@@ -41,7 +41,7 @@ def dispersao_no_tempo(tag):
     plt.xlim(max_ano+1,40)
     plt.ylabel(tag)
     plt.savefig('graficos/{}_no_tempo.png'.format(tag))
-    #plt.show()
+    plt.show()
     plt.close()
 
 def histograma(tag):
@@ -52,7 +52,7 @@ def histograma(tag):
     plt.legend()
     plt.xlabel(tag)
     plt.savefig('graficos/histograma_{}.png'.format(tag))
-    # plt.show()
+    plt.show()
     plt.close()
 
 def histograma3(genero_chi):
@@ -81,7 +81,7 @@ def histograma2(genero_chi,genero_teste):
     plt.yscale('log')
     plt.xlabel('$\chi^2_{redux}$, '+'$\sigma$ = {:.1f}'.format(sigma))
     plt.savefig('graficos/histograma2_{}_{}.png'.format(genero_chi,genero_teste))
-    #plt.show()
+    plt.show()
     plt.close()
 
 def histograma1(genero_chi):
@@ -97,17 +97,17 @@ def histograma1(genero_chi):
     plt.show()
     plt.close()
 
-#todas_as_tags = { tag for genero in generos for tag in tags[genero] }
-#todas_as_tags = list(todas_as_tags)
-#dispersao_no_tempo('len')
-#histograma('len')
-#for tag in todas_as_tags:
-#    histograma(tag)
-#     dispersao_tag_tag('len',tag)
-#     dispersao_no_tempo(tag)
-#     for outra in todas_as_tags:
-#         if todas_as_tags.index(outra) > todas_as_tags.index(tag):
-#             dispersao_tag_tag(tag,outra)
+todas_as_tags = { tag for genero in generos for tag in tags[genero] }
+todas_as_tags = list(todas_as_tags)
+dispersao_no_tempo('len')
+histograma('len')
+for tag in todas_as_tags:
+   histograma(tag)
+    dispersao_tag_tag('len',tag)
+    dispersao_no_tempo(tag)
+    for outra in todas_as_tags:
+        if todas_as_tags.index(outra) > todas_as_tags.index(tag):
+            dispersao_tag_tag(tag,outra)
 
 for genero_chi in generos:
     histograma1(genero_chi)
